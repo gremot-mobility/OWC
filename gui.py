@@ -147,3 +147,193 @@ class OneWayClutchTesterGUI:
         message_frame = tk.LabelFrame(status_frame, text="Status Message")
         message_frame.pack(fill="x", padx=20, pady=10)
         tk.Label(message_frame, textvariable=self.status_message).pack(pady=5)
+
+    def create_param_row(self, parent, label_text, variable, unit, readonly=False):
+        frame = tk.Frame(parent)
+        frame.pack(fill="x", padx=5, pady=2)
+
+        tk.Label(frame, text=label_text, width=15, anchor="e").pack(side="left", padx=2)
+        tk.Entry(frame, textvariable=variable, width=8,
+                 state="readonly" if readonly else "normal").pack(side="left", padx=2)
+        tk.Label(frame, text=unit, width=4, anchor="w").pack(side="left")
+
+    def create_status_lights(self, parent):
+        self.canvas_red = tk.Canvas(parent, width=30, height=30)
+        self.canvas_yellow = tk.Canvas(parent, width=30, height=30)
+        self.canvas_green = tk.Canvas(parent, width=30, height=30)
+
+        self.canvas_red.pack(side="left", padx=5)
+        self.canvas_yellow.pack(side="left", padx=5)
+        self.canvas_green.pack(side="left", padx=5)
+
+        self.update_status_lights("ready")
+
+    def update_status_lights(self, status):
+        """Updates status lights based on system state"""
+        # Clear all lights
+        for canvas in [self.canvas_red, self.canvas_yellow, self.canvas_green]:
+            canvas.delete("all")
+            canvas.create_oval(5, 5, 25, 25, fill="grey")
+
+        if status == "running":
+            self.canvas_green.delete("all")
+            self.canvas_green.create_oval(5, 5, 25, 25, fill="green")
+            self.status_message.set("Motor is Running")
+        elif status == "warning":
+            self.canvas_yellow.delete("all")
+            self.canvas_yellow.create_oval(5, 5, 25, 25, fill="yellow")
+            self.status_message.set("Warning: Check Parameters")
+        elif status == "stopped":
+            self.canvas_red.delete("all")
+            self.canvas_red.create_oval(5, 5, 25, 25, fill="red")
+            self.status_message.set("System Stopped")
+        elif status == "completed":
+            # Flash all lights green to indicate successful completion
+            for canvas in [self.canvas_red, self.canvas_yellow, self.canvas_green]:
+                canvas.delete("all")
+                canvas.create_oval(5, 5, 25, 25, fill="green")
+            self.status_message.set("Target Cycles Completed Successfully")
+        else:  # ready
+            self.canvas_green.delete("all")
+            self.canvas_green.create_oval(5, 5, 25, 25, fill="green")
+            self.status_message.set("System Ready")
+
+    def update_parameters(self):
+        """Updates all GUI parameters with current motor values"""
+        try:
+            if self.running and self.motor_controller:
+                try:
+                    self.motor_rpm.set(str(self.motor_controller.read_motor_data("motor_rpm") or 0))
+                    self.motor_temp.set(str(self.motor_controller.read_motor_data("motor_temp") or 0))
+                    self.controller_temp.set(str(self.motor_controller.read_motor_data("controller_temp") or 0))
+                    self.battery_voltage.set(f"{self.motor_controller.read_motor_data('battery_voltage') or 0:.1f}")
+                    self.battery_soc.set(str(self.motor_controller.read_motor_data("battery_state of charge") or 0))
+
+                    # Update cycle count
+                    current_count = self.motor_controller.get_last_cycle_count("No_of_cycles.txt")
+                    self.current_cycle.set(str(current_count))
+
+                    # Check warning conditions
+                    if float(self.motor_temp.get()) > 80:
+                        self.update_status_lights("warning")
+                    elif float(self.battery_soc.get()) < 30:
+                        self.update_status_lights("warning")
+                    else:
+                        self.update_status_lights("running")
+
+                except Exception as e:
+                    print(f"Error reading motor data: {e}")
+                    self.update_status_lights("warning")
+
+        except Exception as e:
+            print(f"Error in update_parameters: {e}")
+
+        # Schedule the next update
+        self.root.after(1000, self.update_parameters)
+
+    def start_test(self):
+        """Handles the start button click"""
+        if not self.running and self.motor_controller:
+            try:
+                target_cycles = int(self.target_cycles.get())
+                if target_cycles == 0 or target_cycles < -1:
+                    messagebox.showerror("Error",
+                                         "Please enter -1 for continuous mode or a positive number for specific cycles")
+                    return
+                # Collect parameters from GUI
+                params = {
+                    "target_rpm": float(self.target_rpm.get()),
+                    "forward_torque": float(self.forward_torque.get()),
+                    "reverse_torque": float(self.reverse_torque.get()),
+                    "forward_duration": float(self.forward_duration.get()),
+                    "reverse_duration": float(self.reverse_duration.get()),
+                    "max_motor_current": float(self.max_motor_current.get()),
+                    "max_brake_current": float(self.max_brake_current.get())
+                }
+
+                self.running = True
+                self.update_status_lights("running")
+                self.start_button.config(state="disabled")
+
+                # Start test in separate thread
+                self.test_thread = threading.Thread(
+                    target=self.run_test_with_monitoring,
+                    args=(params, target_cycles)
+                )
+                self.test_thread.daemon = True
+                self.test_thread.start()
+
+            except ValueError as e:
+                messagebox.showerror("Error", "Please enter valid numbers for all parameters")
+                self.stop_test()
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to start test: {str(e)}")
+                self.stop_test()
+
+    def run_test_with_monitoring(self, params, target_cycles):
+        """Runs the test and monitors for completion"""
+        try:
+            final_cycle = self.motor_controller.start_test(params, target_cycles)
+            # If we reach here, test completed successfully
+            self.root.after(0, self.handle_test_completion, "completed")
+        except Exception as e:
+            # If there was an error
+            self.root.after(0, self.handle_test_completion, "error")
+
+    def handle_test_completion(self, status):
+        """Handles test completion and updates UI accordingly"""
+        self.running = False
+        self.start_button.config(state="normal")
+
+        if status == "completed":
+            self.update_status_lights("completed")
+            self.status_message.set("Test Completed Successfully")
+            messagebox.showinfo("Success", "Target cycles completed successfully!")
+        else:
+            self.update_status_lights("stopped")
+            self.status_message.set("Test Stopped Due to Error")
+
+    def stop_test(self):
+        """Handles the stop button click"""
+        self.running = False
+        self.update_status_lights("stopped")
+        self.start_button.config(state="normal")
+        try:
+            self.motor_controller.stop_test()
+        except Exception as e:
+            messagebox.showerror("Error", f"Error stopping test: {str(e)}")
+
+    def update_parameters(self):
+        """Updates all GUI parameters with current motor values"""
+        if self.running:
+            try:
+                self.motor_rpm.set(str(self.motor_controller.read_motor_data("motor_rpm")))
+                self.motor_temp.set(str(self.motor_controller.read_motor_data("motor_temp")))
+                self.controller_temp.set(str(self.motor_controller.read_motor_data("controller_temp")))
+                self.battery_voltage.set(f"{self.motor_controller.read_motor_data('battery_voltage'):.1f}")
+                self.battery_soc.set(str(self.motor_controller.read_motor_data("battery_state of charge")))
+
+                # Update cycle count
+                current_count = self.motor_controller.get_last_cycle_count("No_of_cycles.txt")
+                self.current_cycle.set(str(current_count))
+
+                # Check warning conditions
+                if float(self.motor_temp.get()) > 80:
+                    self.update_status_lights("warning")
+                elif float(self.battery_soc.get()) < 30:
+                    self.update_status_lights("warning")
+                else:
+                    self.update_status_lights("running")
+
+            except Exception as e:
+                print(f"Error updating parameters: {e}")
+
+        self.root.after(1000, self.update_parameters)
+
+def main():
+    root = tk.Tk()
+    app = OneWayClutchTesterGUI(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
