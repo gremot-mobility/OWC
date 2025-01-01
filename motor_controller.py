@@ -50,3 +50,55 @@ class MotorController:
         "set_remote_speed_command": {"address": 1677, "max_register_value": 2 ** 16},
         "set_remote_state_command": {"address": 493},
     }
+
+    def execute_command(self, command_name, value):
+        """Executes a predefined command with the given value."""
+        command = self.COMMANDS.get(command_name)
+        if command:
+            self.write_to_register(
+                address=command["address"],
+                value=value,
+                multiplier=command.get("multiplier", 1),
+                max_register_value=command.get("max_register_value")
+            )
+        else:
+            logging.error(f"Invalid command name: {command_name}")
+
+    def read_motor_data(self, data_type):
+        """Reads motor parameters such as RPM, temperature, and voltage."""
+        parameter_config = {
+            "motor_temp": {"address": 261, "multiplier": 1},
+            "controller_temp": {"address": 259, "multiplier": 1},
+            "battery_voltage": {"address": 265, "multiplier": 0.03},
+            "battery_state of charge": {"address": 267, "multiplier": 1},
+            "motor_rpm": {"address": 263, "multiplier": 1},
+        }
+
+        config = parameter_config.get(data_type)
+        if not config:
+            logging.error(f"Invalid data type requested: {data_type}")
+            return None
+        try:
+            raw_value = self.motor.read_register(config["address"], 0)
+            scaled_value = raw_value * config["multiplier"]
+            return scaled_value
+        except Exception as e:
+            logging.error(f"Error reading {data_type}: {e}")
+            return None
+
+    def get_last_cycle_count(self, file_name):
+        """Reads the last recorded cycle count from the file."""
+        if not os.path.exists(file_name):
+            return 1
+        try:
+            with open(file_name, "r") as file:
+                lines = file.readlines()
+                for line in reversed(lines):
+                    if line.startswith("No of cycles:"):
+                        try:
+                            return int(line.split(":")[1].strip())
+                        except ValueError:
+                            continue
+        except Exception as e:
+            logging.error(f"Error reading cycle count: {e}")
+            return 1
