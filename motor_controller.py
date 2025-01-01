@@ -102,3 +102,226 @@ class MotorController:
         except Exception as e:
             logging.error(f"Error reading cycle count: {e}")
             return 1
+
+    def calculate_battery_soc(self, battery_voltage):
+        """
+        Calculates the battery State of Charge (SOC) based on battery voltage.
+        """
+        if battery_voltage >= 48:
+            return 1.0
+        elif battery_voltage <= 30:
+            return 0.0
+        else:
+            return (battery_voltage - 30) / (48 - 30)
+
+    def check_one_way_clutch(self, torque_duration_pairs):
+        """
+        Check for one-way clutch wear-out during reverse torque conditions.
+        """
+        for torque, duration in torque_duration_pairs:
+            if torque < 0:
+                self.execute_command("set_remote_torque_command", torque)
+                time.sleep(duration)
+                motor_rpm = self.read_motor_data("motor_rpm")
+                if motor_rpm < 0:
+                    logging.warning("One-way clutch might be worn out. Negative RPM detected.")
+                    return False
+        return True
+
+    def cooldown_motor(self):
+        """
+        Cool down the motor when the temperature exceeds the threshold.
+        """
+        motor_temp = self.read_motor_data("motor_temp")
+        logging.warning("Motor temperature exceeds threshold. Cooling before retry.")
+        while motor_temp > 30:
+            time.sleep(600)
+            motor_temp = self.read_motor_data("motor_temp")
+
+    def check_battery_soc(self):
+        """
+        Ensure battery SOC remains above the threshold.
+        """
+        battery_soc = self.read_motor_data("battery_state of charge")
+        if battery_soc < 30:
+            logging.warning("Battery SOC below threshold. Cooling before retry.")
+            time.sleep(300)
+            return False
+        return True
+
+    def perform_motor_cycles(self, torque_duration_pairs, cycle_count_target, txt_file_name):
+        """Performs motorcycles and logs the data."""
+        try:
+            # Get current cycle count
+            current_count = self.get_last_cycle_count(txt_file_name) or 1
+
+            # Calculate target count
+            if cycle_count_target == -1:
+                target_count = float('inf')
+            else:
+                target_count = current_count + cycle_count_target
+
+            while current_count < target_count and self.running:
+                try:
+                    # Battery check with retry
+                    retry_count = 0
+                    while retry_count < 3:  # Try up to 3 times
+                        try:
+                            if not self.check_battery_soc():
+                                time.sleep(1)
+                                retry_count += 1
+                                continue
+                            break
+                        except (minimalmodbus.InvalidResponseError, serial.SerialTimeoutException):
+                            time.sleep(1)
+                            retry_count += 1
+                    if retry_count == 3:
+                        logging.error("Failed to check battery after 3 retries")
+                        continue
+
+                    # Temperature check with retry
+                    motor_temp = self.read_motor_data("motor_temp")
+                    if motor_temp and motor_temp > 90:
+                        self.cooldown_motor()
+                        continue
+
+                    # Execute each torque-duration pair
+                    forward_torque = None
+                    reverse_torque = None
+                    negative_torque = None
+
+                    for torque, duration in torque_duration_pairs:
+                        if not self.running:
+                            break
+
+                        # Set torque with retry
+                        retry_count = 0
+                        while retry_count < 3:
+                            try:
+                                self.execute_command("set_remote_torque_command", torque)
+                                break
+                            except (minimalmodbus.InvalidResponseError, serial.SerialTimeoutException):
+                                time.sleep(1)
+                                retry_count += 1
+                        if retry_count == 3:
+                            logging.error(f"Failed to set torque {torque} after 3 retries")
+                            continue
+
+                        # Wait for duration
+                        start_time = time.time()
+                        while time.time() - start_time < duration and self.running:
+                            time.sleep(0.1)
+
+                        # Read motor RPM with retry
+                        retry_count = 0
+                        while retry_count < 3:
+                            try:
+                                motor_rpm = self.read_motor_data("motor_rpm")
+                                if motor_rpm is not None:
+                                    if torque > 0:
+                                        forward_torque = motor_rpm
+                                    elif torque == 0:
+                                        reverse_torque = motor_rpm
+                                    elif torque < -1:
+                                        negative_torque = motor_rpm
+                                break
+                            except (minimalmodbus.InvalidResponseError, serial.SerialTimeoutException):
+                                time.sleep(1)
+                                retry_count += 1
+
+                    if not self.running:
+                        break
+
+                    retry_count = 0
+                    while retry_count < 3:
+                        try:
+                            motor_temp = self.read_motor_data("motor_temp")
+                            controller_temp = self.read_motor_data("controller_temp")
+                            battery_voltage = self.read_motor_data("battery_voltage")
+                            if all(v is not None for v in [motor_temp, controller_temp, battery_voltage]):
+                                break
+                        except (minimalmodbus.InvalidResponseError, serial.SerialTimeoutException):
+                            time.sleep(1)
+                            retry_count += 1
+
+                    # Log cycle data
+                    cycle_data = (
+                        f"No of cycles: {current_count}\n"
+                        f"Set RPM: 320 RPM\n"
+                        f"Motor RPM in forward torque: {forward_torque} RPM\n"
+                        f"Motor Temperature: {motor_temp} degC\n"
+                        f"Controller Temperature: {controller_temp} degC\n"
+                        f"Battery Voltage: {battery_voltage:.3f} V\n"
+                        f"Motor RPM in reverse torque: {reverse_torque} RPM\n"
+                        f"Motor RPM in negative torque: {negative_torque} RPM\n\n"
+                    )
+
+                    # Write cycle data
+                    try:
+                        with open(txt_file_name, "a") as txt_file:
+                            txt_file.write(cycle_data)
+                        logging.info(f"Cycle {current_count} logged successfully")
+                    except Exception as e:
+                        logging.error(f"Error writing to file: {e}")
+
+                    current_count += 1
+                    logging.info(
+                        f"Completed cycle {current_count} of {target_count if cycle_count_target != -1 else 'continuous'}")
+
+                    # Check if target reached
+                    if cycle_count_target != -1 and current_count >= target_count:
+                        logging.info("Target cycles completed")
+                        self.running = False
+                        break
+
+                except Exception as e:
+                    logging.error(f"Error during cycle execution: {e}")
+                    time.sleep(1)  # Wait before retrying
+                    continue
+
+        except Exception as e:
+            logging.error(f"Critical error in perform_motor_cycles: {e}")
+        finally:
+            # Ensure motor is stopped
+            try:
+                self.execute_command("set_remote_torque_command", 0)
+                self.execute_command("set_remote_state_command", 0)
+            except Exception as e:
+                logging.error(f"Error stopping motor: {e}")
+
+        return current_count
+
+    def start_test(self, params, cycle_count_target=-1):
+        """Starts the motor test with the given parameters."""
+        try:
+            self.running = True
+            self.execute_command("set_speed_regulator_mode", 2)
+            self.execute_command("set_remote_torque_command", params["forward_torque"])
+            self.execute_command("set_remote_maximum_regen_battery_current_limit", 41)
+            self.execute_command("set_remote_maximum_battery_current_limit", 70)
+            self.execute_command("set_remote_maximum_motoring_current", params["max_motor_current"])
+            self.execute_command("set_remote_maximum_braking_current", params["max_brake_current"])
+            self.execute_command("set_remote_maximum_braking_torque", abs(params["reverse_torque"]))
+            self.execute_command("set_remote_speed_command", params["target_rpm"])
+            self.execute_command("set_remote_state_command", 2)
+
+            torque_duration_pairs = [
+                (params["forward_torque"], params["forward_duration"]),
+                (params["reverse_torque"], params["reverse_duration"])
+            ]
+            return self.perform_motor_cycles(torque_duration_pairs, cycle_count_target, "No_of_cycles.txt")
+        except Exception as e:
+            logging.error(f"Error starting test: {e}")
+            self.stop_test()
+            raise
+
+    def stop_test(self):
+        """Stops the motor test."""
+        self.running = False
+        try:
+            self.execute_command("set_remote_torque_command", 0)
+            self.execute_command("set_remote_state_command", 0)
+            logging.info("Motor stopped")
+        except Exception as e:
+            logging.error(f"Error stopping motor: {e}")
+            raise
