@@ -1,0 +1,936 @@
+No of cycles: 1
+Set RPM: 320 RPM
+Motor RPM in forward torque: 380 RPM
+Torque:100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 51.78V
+Motor RPM in reverse torque: 0 RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 2
+Set RPM: 320 RPM
+Motor RPM in forward torque: 378 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.620 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 2
+Set RPM: 320 RPM
+Motor RPM in forward torque: 378 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.380 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 3
+Set RPM: 320 RPM
+Motor RPM in forward torque: 457 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 3
+Set RPM: 320 RPM
+Motor RPM in forward torque: 457 RPM
+Torque: -100%
+Motor Temperature: 27 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.230 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 4
+Set RPM: 320 RPM
+Motor RPM in forward torque: 378 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.620 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 4
+Set RPM: 320 RPM
+Motor RPM in forward torque: 378 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.320 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 5
+Set RPM: 320 RPM
+Motor RPM in forward torque: 458 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 5
+Set RPM: 320 RPM
+Motor RPM in forward torque: 458 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.260 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 6
+Set RPM: 320 RPM
+Motor RPM in forward torque: 383 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.620 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 6
+Set RPM: 320 RPM
+Motor RPM in forward torque: 383 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.290 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 7
+Set RPM: 320 RPM
+Motor RPM in forward torque: 461 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 7
+Set RPM: 320 RPM
+Motor RPM in forward torque: 461 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.260 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 9
+Set RPM: 320 RPM
+Motor RPM in forward torque: 379 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.620 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 9
+Set RPM: 320 RPM
+Motor RPM in forward torque: 379 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.290 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 10
+Set RPM: 320 RPM
+Motor RPM in forward torque: 456 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 10
+Set RPM: 320 RPM
+Motor RPM in forward torque: 456 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.260 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 11
+Set RPM: 320 RPM
+Motor RPM in forward torque: 373 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 11
+Set RPM: 320 RPM
+Motor RPM in forward torque: 373 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.290 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 12
+Set RPM: 320 RPM
+Motor RPM in forward torque: 455 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 12
+Set RPM: 320 RPM
+Motor RPM in forward torque: 455 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.200 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 13
+Set RPM: 320 RPM
+Motor RPM in forward torque: 377 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 13
+Set RPM: 320 RPM
+Motor RPM in forward torque: 377 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.350 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 13
+Set RPM: 320 RPM
+Motor RPM in forward torque: 461 RPM
+Torque: 100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 13
+Set RPM: 320 RPM
+Motor RPM in forward torque: 461 RPM
+Torque: -100%
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.200 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 13
+Set RPM: 320 RPM
+Motor RPM in forward torque: 501 RPM
+Torque: 100%
+Motor Temperature: 27 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 13
+Set RPM: 320 RPM
+Motor RPM in forward torque: 501 RPM
+Torque: -100%
+Motor Temperature: 27 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.080 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 14
+Set RPM: 320 RPM
+Motor RPM in forward torque: 369 RPM
+Torque: 100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 14
+Set RPM: 320 RPM
+Motor RPM in forward torque: 369 RPM
+Torque: -100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.290 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 15
+Set RPM: 320 RPM
+Motor RPM in forward torque: 456 RPM
+Torque: 100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 15
+Set RPM: 320 RPM
+Motor RPM in forward torque: 456 RPM
+Torque: -100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.140 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 15
+Set RPM: 320 RPM
+Motor RPM in forward torque: 377 RPM
+Torque: 100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 15
+Set RPM: 320 RPM
+Motor RPM in forward torque: 377 RPM
+Torque: -100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.320 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 16
+Set RPM: 320 RPM
+Motor RPM in forward torque: 454 RPM
+Torque: 100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.590 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: None RPM
+
+No of cycles: 16
+Set RPM: 320 RPM
+Motor RPM in forward torque: 454 RPM
+Torque: -100%
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.230 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 16
+Set RPM: 320 RPM
+Motor RPM in forward torque: 385 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.260 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 17
+Set RPM: 320 RPM
+Motor RPM in forward torque: 456 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.230 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 17
+Set RPM: 320 RPM
+Motor RPM in forward torque: 377 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.320 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 18
+Set RPM: 320 RPM
+Motor RPM in forward torque: 455 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 27 degC
+Battery Voltage: 49.140 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 19
+Set RPM: 320 RPM
+Motor RPM in forward torque: 370 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 27 degC
+Battery Voltage: 49.260 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 20
+Set RPM: 320 RPM
+Motor RPM in forward torque: 451 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 27 degC
+Battery Voltage: 49.140 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 21
+Set RPM: 320 RPM
+Motor RPM in forward torque: 378 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 27 degC
+Battery Voltage: 49.260 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 22
+Set RPM: 320 RPM
+Motor RPM in forward torque: 456 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 27 degC
+Battery Voltage: 49.110 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 23
+Set RPM: 320 RPM
+Motor RPM in forward torque: 510 RPM
+Motor Temperature: 30 degC
+Controller Temperature: 27 degC
+Battery Voltage: 49.050 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 24
+Set RPM: 320 RPM
+Motor RPM in forward torque: 380 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.320 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 25
+Set RPM: 320 RPM
+Motor RPM in forward torque: 444 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 26 degC
+Battery Voltage: 49.170 V
+Motor RPM in reverse torque: 0 RPM
+
+No of cycles: 25
+Set RPM: 320 RPM
+Motor RPM in forward torque: 445 RPM
+Motor Temperature: 23 degC
+Controller Temperature: 24 degC
+Battery Voltage: 48.960 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 26
+Set RPM: 320 RPM
+Motor RPM in forward torque: 565 RPM
+Motor Temperature: 24 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.750 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 26
+Set RPM: 320 RPM
+Motor RPM in forward torque: 451 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 25 degC
+Battery Voltage: 49.050 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 27
+Set RPM: 320 RPM
+Motor RPM in forward torque: 564 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.840 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 28
+Set RPM: 320 RPM
+Motor RPM in forward torque: 648 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.540 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 29
+Set RPM: 320 RPM
+Motor RPM in forward torque: 705 RPM
+Motor Temperature: 31 degC
+Controller Temperature: 26 degC
+Battery Voltage: 48.360 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 30
+Set RPM: 320 RPM
+Motor RPM in forward torque: 726 RPM
+Motor Temperature: 33 degC
+Controller Temperature: 27 degC
+Battery Voltage: 48.270 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 30
+Set RPM: 320 RPM
+Motor RPM in forward torque: 444 RPM
+Motor Temperature: 23 degC
+Controller Temperature: 22 degC
+Battery Voltage: 48.960 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 31
+Set RPM: 320 RPM
+Motor RPM in forward torque: 566 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 22 degC
+Battery Voltage: 48.660 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 31
+Set RPM: 320 RPM
+Motor RPM in forward torque: 441 RPM
+Motor Temperature: 24 degC
+Controller Temperature: 24 degC
+Battery Voltage: 48.870 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 32
+Set RPM: 320 RPM
+Motor RPM in forward torque: 574 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.750 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 32
+Set RPM: 320 RPM
+Motor RPM in forward torque: 443 RPM
+Motor Temperature: 24 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.870 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 33
+Set RPM: 320 RPM
+Motor RPM in forward torque: 566 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.720 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 33
+Set RPM: 320 RPM
+Motor RPM in forward torque: 355 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 28 degC
+Battery Voltage: 48.870 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 33
+Set RPM: 320 RPM
+Motor RPM in forward torque: 0 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 28 degC
+Battery Voltage: 49.110 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 33
+Set RPM: 320 RPM
+Motor RPM in forward torque: 362 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 28 degC
+Battery Voltage: 48.840 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 33
+Set RPM: 320 RPM
+Motor RPM in forward torque: 445 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 28 degC
+Battery Voltage: 48.690 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 33
+Set RPM: 320 RPM
+Motor RPM in forward torque: 355 RPM
+Motor Temperature: 23 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.630 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 33
+Set RPM: 320 RPM
+Motor RPM in forward torque: 350 RPM
+Motor Temperature: 24 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.600 V
+Motor RPM in reverse torque: 0 RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 34
+Set RPM: 320 RPM
+Motor RPM in forward torque: 459 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 0 degC
+Battery Voltage: 48.420 V
+Motor RPM in reverse torque: 0 RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 34
+Set RPM: 320 RPM
+Motor RPM in forward torque: 355 RPM
+Motor Temperature: 24 degC
+Controller Temperature: 26 degC
+Battery Voltage: 48.540 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 100 RPM
+
+No of cycles: 35
+Set RPM: 320 RPM
+Motor RPM in forward torque: 448 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 27 degC
+Battery Voltage: 48.420 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 36
+Set RPM: 320 RPM
+Motor RPM in forward torque: 506 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 27 degC
+Battery Voltage: 48.810 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 36
+Set RPM: 320 RPM
+Motor RPM in forward torque: 0 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 23 degC
+Battery Voltage: 48.840 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 36
+Set RPM: 320 RPM
+Motor RPM in forward torque: 353 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 23 degC
+Battery Voltage: 48.540 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 36
+Set RPM: 320 RPM
+Motor RPM in forward torque: 346 RPM
+Motor Temperature: 22 degC
+Controller Temperature: 21 degC
+Battery Voltage: 48.540 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 36
+Set RPM: 320 RPM
+Motor RPM in forward torque: 356 RPM
+Motor Temperature: 23 degC
+Controller Temperature: 23 degC
+Battery Voltage: 48.510 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 37
+Set RPM: 320 RPM
+Motor RPM in forward torque: 455 RPM
+Motor Temperature: 23 degC
+Controller Temperature: 23 degC
+Battery Voltage: 48.360 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 1612 RPM
+
+No of cycles: 38
+Set RPM: 320 RPM
+Motor RPM in forward torque: 518 RPM
+Motor Temperature: 24 degC
+Controller Temperature: 23 degC
+Battery Voltage: 48.240 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 39
+Set RPM: 320 RPM
+Motor RPM in forward torque: 561 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 24 degC
+Battery Voltage: 48.270 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 40
+Set RPM: 320 RPM
+Motor RPM in forward torque: 590 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 24 degC
+Battery Voltage: 48.090 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 27 RPM
+
+No of cycles: 41
+Set RPM: 320 RPM
+Motor RPM in forward torque: 596 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.150 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 41
+Set RPM: 320 RPM
+Motor RPM in forward torque: 349 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 24 degC
+Battery Voltage: 48.480 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 41
+Set RPM: 320 RPM
+Motor RPM in forward torque: 354 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 24 degC
+Battery Voltage: 48.480 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 42
+Set RPM: 320 RPM
+Motor RPM in forward torque: 448 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.330 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 100 RPM
+
+No of cycles: 43
+Set RPM: 320 RPM
+Motor RPM in forward torque: 512 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.210 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 43
+Set RPM: 320 RPM
+Motor RPM in forward torque: 300 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.510 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 44
+Set RPM: 320 RPM
+Motor RPM in forward torque: 365 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.480 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 45
+Set RPM: 320 RPM
+Motor RPM in forward torque: 444 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.330 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 46
+Set RPM: 320 RPM
+Motor RPM in forward torque: 454 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.300 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 46
+Set RPM: 320 RPM
+Motor RPM in forward torque: 303 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.540 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 47
+Set RPM: 320 RPM
+Motor RPM in forward torque: 361 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.450 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 47
+Set RPM: 320 RPM
+Motor RPM in forward torque: 299 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.540 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 48
+Set RPM: 320 RPM
+Motor RPM in forward torque: 360 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 48.480 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 48
+Set RPM: 320 RPM
+Motor RPM in forward torque: 286 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 48.540 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 49
+Set RPM: 320 RPM
+Motor RPM in forward torque: 364 RPM
+Motor Temperature: 26 degC
+Controller Temperature: 26 degC
+Battery Voltage: 48.450 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 49
+Set RPM: 320 RPM
+Motor RPM in forward torque: 298 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.510 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 49
+Set RPM: 320 RPM
+Motor RPM in forward torque: 305 RPM
+Motor Temperature: 25 degC
+Controller Temperature: 25 degC
+Battery Voltage: 48.510 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+
+
+No of cycles: 49
+Set RPM: 320 RPM
+Motor RPM in forward torque: 296 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 28 degC
+Battery Voltage: 48.510 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 50
+Set RPM: 320 RPM
+Motor RPM in forward torque: 335 RPM
+Motor Temperature: 27 degC
+Controller Temperature: 28 degC
+Battery Voltage: 48.510 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 51
+Set RPM: 320 RPM
+Motor RPM in forward torque: 390 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 28 degC
+Battery Voltage: 48.360 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 52
+Set RPM: 320 RPM
+Motor RPM in forward torque: 473 RPM
+Motor Temperature: 28 degC
+Controller Temperature: 29 degC
+Battery Voltage: 48.270 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 52
+Set RPM: 320 RPM
+Motor RPM in forward torque: 293 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 28 degC
+Battery Voltage: 48.480 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
+No of cycles: 53
+Set RPM: 320 RPM
+Motor RPM in forward torque: 370 RPM
+Motor Temperature: 29 degC
+Controller Temperature: 29 degC
+Battery Voltage: 48.390 V
+Motor RPM in reverse torque: None RPM
+Motor RPM in negative torque: 0 RPM
+
