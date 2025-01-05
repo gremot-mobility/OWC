@@ -18,3 +18,152 @@
 2025-01-01 17:00:15,132 - Target cycles completed
 2025-01-01 17:00:15,148 - Successfully wrote 0 to address 494
 2025-01-01 17:00:15,164 - Successfully wrote 0 to address 493
+2025-01-04 09:10:48,707 - Successfully wrote 2 to address 11
+2025-01-04 09:10:48,729 - Successfully wrote 4046 to address 494
+2025-01-04 09:10:48,742 - Successfully wrote 328 to address 361
+2025-01-04 09:10:48,756 - Successfully wrote 560 to address 360
+2025-01-04 09:10:48,775 - Successfully wrote 4096 to address 491
+2025-01-04 09:10:48,788 - Successfully wrote 4096 to address 492
+2025-01-04 09:10:48,803 - Successfully wrote 4096 to address 1680
+2025-01-04 09:10:48,821 - Successfully wrote 320 to address 1677
+2025-01-04 09:10:48,836 - Successfully wrote 2 to address 493
+2025-01-04 09:10:48,902 - Successfully wrote 4046 to address 494
+2025-01-04 09:10:53,964 - Successfully wrote 61490 to address 494
+2025-01-04 09:10:57,031 - Cycle 53 logged successfully
+2025-01-04 09:10:57,031 - Completed cycle 54 of continuous
+2025-01-04 09:10:57,044 - Error reading battery_state of charge: No communication with the instrument (no answer)
+2025-01-04 09:10:57,044 - Error during cycle execution: '<' not supported between instances of 'NoneType' and 'int'
+2025-01-04 09:10:58,085 - Successfully wrote 4046 to address 494
+2025-01-04 09:11:03,128 - Successfully wrote 61490 to address 494
+2025-01-04 09:11:05,650 - Error reading motor_rpm: No communication with the instrument (no answer)
+2025-01-04 09:11:06,145 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:06,145 - Error reading motor_rpm: No communication with the instrument (no answer)
+2025-01-04 09:11:07,161 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:07,161 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:08,179 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:08,179 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:09,181 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:10,184 - Error reading motor_rpm: No communication with the instrument (no answer)
+2025-01-04 09:11:10,184 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:11,203 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:11,203 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:12,220 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:12,220 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:13,223 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:13,223 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:14,198 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:15,211 - Error stopping motor: No communication with the instrument (no answer)
+2025-01-04 09:11:15,211 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:16,228 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:17,239 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:18,244 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:19,256 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:20,261 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:21,277 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:22,288 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:23,300 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:24,316 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:25,322 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:26,329 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:27,335 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:28,353 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:29,371 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:30,377 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:31,382 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:32,393 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:32,458 - Cycle 54 logged successfully
+2025-01-04 09:11:32,458 - Completed cycle 55 of continuous
+2025-01-04 09:11:32,473 - Successfully wrote 0 to address 494
+2025-01-04 09:11:32,489 - Successfully wrote 0 to address 493
+2025-01-04 09:11:40,202 - Successfully wrote 2 to address 11
+2025-01-04 09:11:40,222 - Successfully wrote 4046 to address 494
+2025-01-04 09:11:40,238 - Successfully wrote 328 to address 361
+2025-01-04 09:11:40,252 - Successfully wrote 560 to address 360
+2025-01-04 09:11:40,266 - Successfully wrote 4096 to address 491
+2025-01-04 09:11:40,286 - Successfully wrote 4096 to address 492
+2025-01-04 09:11:40,300 - Successfully wrote 4096 to address 1680
+2025-01-04 09:11:40,315 - Successfully wrote 320 to address 1677
+2025-01-04 09:11:40,334 - Successfully wrote 2 to address 493
+2025-01-04 09:11:40,363 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:40,366 - Error during cycle execution: No communication with the instrument (no answer)
+2025-01-04 09:11:40,379 - Error reading motor_temp: Wrong functioncode: 16 instead of 3. The response is: b'\x01\x10\x01\xee\x00\x01`'
+2025-01-04 09:11:41,416 - Successfully wrote 4046 to address 494
+2025-01-04 09:11:46,475 - Successfully wrote 61490 to address 494
+2025-01-04 09:11:49,547 - Cycle 54 logged successfully
+2025-01-04 09:11:49,547 - Completed cycle 55 of continuous
+2025-01-04 09:11:49,591 - Successfully wrote 4046 to address 494
+2025-01-04 09:11:53,273 - Error reading motor_rpm: No communication with the instrument (no answer)
+2025-01-04 09:11:54,278 - Error reading motor_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:54,618 - Error reading controller_temp: No communication with the instrument (no answer)
+2025-01-04 09:11:54,620 - Error reading motor_rpm: No communication with the instrument (no answer)
+2025-01-04 09:11:55,638 - Error reading battery_voltage: No communication with the instrument (no answer)
+2025-01-04 09:11:55,638 - Error during cycle execution: No communication with the instrument (no answer)
+2025-01-04 09:11:56,642 - Error reading battery_state of charge: No communication with the instrument (no answer)
+2025-01-04 09:11:56,643 - Error during cycle execution: '<' not supported between instances of 'NoneType' and 'int'
+2025-01-04 09:11:57,684 - Successfully wrote 4046 to address 494
+2025-01-04 09:12:02,740 - Successfully wrote 61490 to address 494
+2025-01-04 09:12:03,221 - Successfully wrote 0 to address 494
+2025-01-04 09:12:03,238 - Successfully wrote 0 to address 493
+2025-01-04 09:12:03,238 - Motor stopped
+2025-01-04 09:12:03,273 - Successfully wrote 0 to address 494
+2025-01-04 09:12:03,286 - Successfully wrote 0 to address 493
+2025-01-04 09:25:19,341 - Successfully wrote 2 to address 11
+2025-01-04 09:25:19,357 - Successfully wrote 4046 to address 494
+2025-01-04 09:25:19,373 - Successfully wrote 328 to address 361
+2025-01-04 09:25:19,388 - Successfully wrote 560 to address 360
+2025-01-04 09:25:19,404 - Successfully wrote 4096 to address 491
+2025-01-04 09:25:19,420 - Successfully wrote 4096 to address 492
+2025-01-04 09:25:19,436 - Successfully wrote 4096 to address 1680
+2025-01-04 09:25:19,451 - Successfully wrote 320 to address 1677
+2025-01-04 09:25:19,468 - Successfully wrote 2 to address 493
+2025-01-04 09:25:19,516 - Successfully wrote 4046 to address 494
+2025-01-04 09:25:24,560 - Successfully wrote 61490 to address 494
+2025-01-04 09:25:27,630 - Cycle 54 logged successfully
+2025-01-04 09:25:27,631 - Completed cycle 55 of 56
+2025-01-04 09:25:27,677 - Successfully wrote 4046 to address 494
+2025-01-04 09:25:32,699 - Error reading battery_state of charge: No communication with the instrument (no answer)
+2025-01-04 09:25:32,722 - Successfully wrote 61490 to address 494
+2025-01-04 09:25:35,793 - Cycle 55 logged successfully
+2025-01-04 09:25:35,793 - Completed cycle 56 of 56
+2025-01-04 09:25:35,793 - Target cycles completed
+2025-01-04 09:25:35,808 - Successfully wrote 0 to address 494
+2025-01-04 09:25:35,824 - Successfully wrote 0 to address 493
+2025-01-04 09:25:54,241 - Successfully wrote 2 to address 11
+2025-01-04 09:25:54,257 - Successfully wrote 4046 to address 494
+2025-01-04 09:25:54,273 - Successfully wrote 328 to address 361
+2025-01-04 09:25:54,289 - Successfully wrote 560 to address 360
+2025-01-04 09:25:54,305 - Successfully wrote 4096 to address 491
+2025-01-04 09:25:54,321 - Successfully wrote 4096 to address 492
+2025-01-04 09:25:54,337 - Successfully wrote 4096 to address 1680
+2025-01-04 09:25:54,353 - Successfully wrote 320 to address 1677
+2025-01-04 09:25:54,369 - Successfully wrote 2 to address 493
+2025-01-04 09:25:54,416 - Successfully wrote 4046 to address 494
+2025-01-04 09:25:59,460 - Successfully wrote 61490 to address 494
+2025-01-04 09:26:02,531 - Cycle 55 logged successfully
+2025-01-04 09:26:02,531 - Completed cycle 56 of continuous
+2025-01-04 09:26:02,578 - Successfully wrote 4046 to address 494
+2025-01-04 09:26:03,861 - Successfully wrote 0 to address 494
+2025-01-04 09:26:03,873 - Successfully wrote 0 to address 493
+2025-01-04 09:26:03,873 - Motor stopped
+2025-01-04 09:26:03,904 - Successfully wrote 0 to address 494
+2025-01-04 09:26:03,920 - Successfully wrote 0 to address 493
+2025-01-04 09:27:00,374 - Successfully wrote 2 to address 11
+2025-01-04 09:27:00,390 - Successfully wrote 4046 to address 494
+2025-01-04 09:27:00,405 - Successfully wrote 328 to address 361
+2025-01-04 09:27:00,421 - Successfully wrote 560 to address 360
+2025-01-04 09:27:00,437 - Successfully wrote 4096 to address 491
+2025-01-04 09:27:00,454 - Successfully wrote 4096 to address 492
+2025-01-04 09:27:00,470 - Successfully wrote 4096 to address 1680
+2025-01-04 09:27:00,486 - Successfully wrote 320 to address 1677
+2025-01-04 09:27:00,501 - Successfully wrote 2 to address 493
+2025-01-04 09:27:00,549 - Successfully wrote 4046 to address 494
+2025-01-04 09:27:05,593 - Successfully wrote 61490 to address 494
+2025-01-04 09:27:08,665 - Cycle 55 logged successfully
+2025-01-04 09:27:08,665 - Completed cycle 56 of 57
+2025-01-04 09:27:08,711 - Successfully wrote 4046 to address 494
+2025-01-04 09:27:13,754 - Successfully wrote 61490 to address 494
+2025-01-04 09:27:16,815 - Cycle 56 logged successfully
+2025-01-04 09:27:16,815 - Completed cycle 57 of 57
+2025-01-04 09:27:16,815 - Target cycles completed
+2025-01-04 09:27:16,830 - Successfully wrote 0 to address 494
+2025-01-04 09:27:16,853 - Successfully wrote 0 to address 493
