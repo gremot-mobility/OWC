@@ -13,7 +13,7 @@ logging.basicConfig(
 
 
 class MotorController:
-    def __init__(self, port='COM7', slave_address=1, baudrate=115200):
+    def __init__(self, port='COM8', slave_address=1, baudrate=115200):
         self.motor = None
         self.port = port
         self.slave_address = slave_address
