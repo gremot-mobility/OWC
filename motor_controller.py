@@ -13,7 +13,7 @@ logging.basicConfig(
 
 
 class MotorController:
-    def __init__(self, port='COM4', slave_address=1, baudrate=115200):
+    def __init__(self, port='COM8', slave_address=1, baudrate=115200):
         self.motor = None
         self.port = port
         self.slave_address = slave_address
@@ -247,13 +247,13 @@ class MotorController:
                     # Log cycle data
                     cycle_data = (
                         f"No of cycles: {current_count}\n"
-                        f"Set RPM: 320 RPM\n"
-                        f"Motor RPM in forward torque: {forward_torque} RPM\n"
-                        f"Motor Temperature: {motor_temp} degC\n"
-                        f"Controller Temperature: {controller_temp} degC\n"
-                        f"Battery Voltage: {battery_voltage:.3f} V\n"
-                        f"Motor RPM in reverse torque: {reverse_torque} RPM\n"
-                        f"Motor RPM in negative torque: {negative_torque} RPM\n\n"
+                        # f"Set RPM: 320 RPM\n"
+                        # f"Motor RPM in forward torque: {forward_torque} RPM\n"
+                        # f"Motor Temperature: {motor_temp} degC\n"
+                        # f"Controller Temperature: {controller_temp} degC\n"
+                        # f"Battery Voltage: {battery_voltage:.3f} V\n"
+                        # f"Motor RPM in reverse torque: {reverse_torque} RPM\n"
+                        # f"Motor RPM in negative torque: {negative_torque} RPM\n\n"
                     )
 
                     # Write cycle data
